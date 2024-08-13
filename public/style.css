@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 2em;
+}
+
+/* Form styles */
+form {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a shadow for better visual effect */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: white;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+}
+
+/* Button styles */
+button.edit {
+    background-color: #4CAF50;
+}
+
+button.edit:hover {
+    background-color: #95e198;
+}
+
+button.delete {
+    background-color: #f44336;
+}
+
+button.delete:hover {
+    background-color: #e77f7f;
+}
+
+/* Container for action buttons */
+.action-buttons {
+    display: flex;
+    gap: 0.5em; /* Space between buttons */
+}
+
+/* Hide edit form initially */
+#edit-product-container {
+    display: none;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.75em;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td {
+    vertical-align: middle;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    input,
+    button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
